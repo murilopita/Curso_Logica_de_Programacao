@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02 - Desafio Operadores de Atribuição</title>
+</head>
+<body>
+  <h1>02 - Desafio Operadores de Atribuição</h1>
+
+  <p>ATENÇÃO: Para esse desafio, você só pode criar uma única variável.</p>
+  <p>
+    <ul>
+      <li>Crie uma variável e atribua o valor 10.</li>
+      <li>Some 5 à essa variável e retribua o valor.</li>
+      <li>multiplique o valor da variável e reatribua o novo valor.</li>
+      <li>sem alterar o valor da variável, mostre na tela o resta da divisão por 6. A mensagem deve ser: "O resto da divisão de (variável) por 6 é (resultado).</li>
+      <li>sem alterar o valor da variável, mostre na tela o resto da divisão por 6 elevado ao quadrado. A mensagem deve ser: "O quadrado do resto da divisão de (variável) por 6 é (resultado).</li>
+      <li>Mostre na tela o valor da variável.</li>
+      <li>Agora divida o valor da variável por 4 e reatribua o valor.</li>
+      <li>Qual o valor da variável?</li>
+    </ul>
+  </p>
+
+  <script>
+    let x = 10;
+    x += 5;
+    x *= 5;
+    x++; // ou '++x' ou 'x += 1' também serve.
+
+    alert('O resto da divisão de ' + x + ' por 6 é ' + (x % 6));
+    alert('O quadrado do resto da divisão de ' + x + ' por 6 é ' + ( (x % 6)** 2) );
+    alert(x);
+    
+    x /= 4;
+
+    alert(x);
+  </script>
+</body>
+</html>
