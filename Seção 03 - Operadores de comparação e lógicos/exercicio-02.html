@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 01</title>
+</head>
+<body>
+  <h1>Desafio 01</h1>
+  <p>Pedir ao usuário digitar dois números entre 0 e 10 e mostrar na tela um boolean indicando se a média é maior que sete.</p>
+
+  <script>
+
+    let n1 = parseFloat(prompt('Digite um número entre 0 e 10:'));
+    let n2 = parseFloat(prompt('Digite outro número entre 0 e 10: '));
+
+    let calcMedia = (n1 + n2) / 2;
+
+    alert("A média é maior que sete? " + (calcMedia > 7));
+
+  </script>
+</body>
+</html>
