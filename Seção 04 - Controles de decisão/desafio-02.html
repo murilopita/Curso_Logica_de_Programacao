@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Condicionais IF e ELSE</title>
+</head>
+<body>
+  <h1>Desafio 02</h1>
+  <p>1- Pedir para o usuário digitar dois números e mostrar a mensagem "APROVADO!" caso a média seja maior que 4 e nenhuma nota seja igual à zero.</p>
+  <p>2- Mostre a mensagem "REPROVADO!" caso a média seja menor ou igual à 4 ou exista pelo menos uma nota igual à zero.</p>
+  <p> OBS.: Foi pedido para o usuário digitar dois números de 0 à 10 mas o engraçadinho digitou 15. Como resolver?</p>
+  
+  <script>
+  
+  let n1 = parseFloat(prompt('Digite a nota 1:'));
+  let n2 = parseFloat(prompt('Digite a nota 2:'));
+
+  if (n1 > 10 || n2 > 10){
+    alert('Os números devem ser entre 0 e 10');
+
+  } else {
+    let media = (n1 + n2) / 2;
+
+    if (media > 4 && n1 > 0 && n2 > 0) {
+      alert('APROVADO!');
+    } else {
+      alert('REPROVADO!');
+    };
+  }
+
+  alert('Fim do Programa!');
+
+  </script>
+</body>
+</html>
