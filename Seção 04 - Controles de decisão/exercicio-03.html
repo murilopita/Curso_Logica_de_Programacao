@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>switch case</title>
+</head>
+
+<body>
+  <h1>Exercício 03</h1>
+  <p>Pedir para o usuário digitar um número de 0 à 6.</p>
+  <p>Mostrar uma mensagem informando qual o dia da semana correspondente. Domingo (0) até Sábado(6).</p>
+  <p>Exemplo: Se o usuário digitar 3, deve mostrar "Quarta-feira".</p>
+
+  // Não precisamos converter a string para número.
+
+
+  <script>
+
+    let n = prompt('Digite um número de 0 à 6'); // essa variável é tipo String. 
+
+    switch (n) {
+      case "0":
+        alert('Domingo')
+        break
+      case "1":
+        alert('Segunda-feira')
+        break
+      case "2":
+        alert('Terça-feira');
+        break
+      case "3":
+        alert('Quarta-feira')
+        break
+      case "4":
+        alert('Quinta-feira')
+        break
+      case "5":
+        alert('Sexta-feira')
+        break
+      case "6":
+        alert('Sábado')
+        break
+      default:
+        alert('Digite um número entre 0 e 6')
+    }
+
+  </script>
+</body>
+
+</html>

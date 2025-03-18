@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 05</title>
+</head>
+<body>
+  <h1>Desafio 5</h1>
+  <ol>
+    <li>Crie uma variável e atribua à ela qualquer valor (qualquer mesmo, número, string, boolean, null ou qualquer outro que você conheça.</li>
+    <li>Utilizando a condicional swicth, mostre no console ou alert o tipo da variável</li>
+    <li>Tenha uma carta na manga para mostrar uma mensagem padrão caso você desconheça o tipo de variável.</li>
+  </ol>
+
+  <script>
+
+    let myVar = 5;
+
+    switch(typeof myVar){
+      case "number": 
+        alert('myVar é número')
+        break
+      case "string": 
+        alert('myVar é texto')
+        break
+      case "boolean": 
+        alert('myVar é boleana')
+        break
+      case "undefined": 
+        alert('myVar é undefined')
+        break
+      default: 
+        alert('Nenhum tipo conhecido')
+    }
+
+  </script>
+</body>
+</html>
