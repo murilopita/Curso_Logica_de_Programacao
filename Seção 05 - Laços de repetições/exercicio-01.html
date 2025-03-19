@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loop while</title>
+</head>
+
+<body>
+  <h1>Exercício 1</h1>
+  <h2>Loops - Tabuada</h2>
+
+  <p>Pedir para o usuário digitar 1 número e mostrar a tabuada desse número de 0 a 1000.</p>
+
+  <script>
+
+    let n = parseInt(prompt('Digite um número'));
+
+    let contador = 0;
+
+    // enquanto o (contador for <= 1000)
+    while (contador <= 1000) {
+      document.write(n + " x " + contador + ": " + n * contador + "<br>");
+      contador++; //Importante para nao acontecer um looping infinito!
+    }
+
+    document.write("Saiu do Looping")
+
+
+
+
+
+  </script>
+</body>
+
+</html>

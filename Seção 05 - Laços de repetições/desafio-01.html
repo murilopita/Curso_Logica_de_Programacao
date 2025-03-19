@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loop while</title>
+</head>
+
+<body>
+  <h1>Desafio 1</h1>
+  <h2>Loop - Tabuada</h2>
+
+  <p>Pedir para o usuário digitar 1 número e mostrar a tabuada desse número de 0 a 10.</p>
+
+  <script>
+    let n = parseFloat(prompt('Digite um número'));
+
+    let contador = 0;
+
+    if(!isNaN(n)){
+      while(contador <= 10){
+        document.write(n + " x " + contador + ": " + n * contador + "<br>");
+        contador++
+      }
+      document.write('Fim do Programa');
+
+    } else {
+      alert("Digite apenas números!");
+    }
+
+
+  </script>
+</body>
+
+</html>
