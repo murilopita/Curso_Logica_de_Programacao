@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loop While</title>
+</head>
+<body>
+  <h1>Desafio 02</h1>
+  <h2>Loop Tabuada v2</h2>
+
+  <p>Pedir para um usuário digitar um número e mostrar a tabuada de 1 até 1000, colocando uma linha divisória ou uma quebra de linha sempre que mudar de dezena.</p>
+
+
+  <script>
+    let n = parseInt(prompt('Digite um Número.'));
+    
+    for (let contador = 1; contador <= 1000; contador++){
+      document.write(n + " x " + contador + ": " + n * contador + "<br>");
+      
+      if (contador % 10 === 0){
+        document.write("<hr>");
+      }
+    }
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Bissexto</title>
+</head>
+<body>
+  <h1>Desafio 03</h1>
+  <h2>Loop dos Anos</h2>
+  <p>Mostre na tela todos os anos a partir de 1004 até o ano 2024. pulando de quatro em quatro anos.</p>
+  <p>Exemplo: 1004<br>1008<br>1012</p>
+  <p>E assim por diante.</p>
+  <p>É como mostrar os anos bissextos, mas sem as regras para descobrir se um ano é bissexto ou não. (vamos imaginar que se o ano é múltiplo de quatro, ele é bissexto).</p>
+
+
+  <script>
+    
+    for (let ano = 1004; ano <= 2024; ano++){
+      if(ano % 4 === 0){
+        document.write(ano + "<br>");
+      }
+    }
+
+    //Ou
+
+    let contador = 0;
+
+    for(let ano = 1004; ano <= 2024; ano += 4) {
+      contador++;
+      document.write(ano + "<br>");
+    }
+
+    console.log(contador);
+
+    //Nesse caso o código fica mais otimizado, pois o número de iterações são menores.
+
+  </script>
+</body>
+</html>

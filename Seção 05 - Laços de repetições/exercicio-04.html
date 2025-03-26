@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estruturas de Repetições</title>
+</head>
+<body>
+  <h1>Exercício 4</h1>
+
+  <h2>Loop - Números Pares</h2>
+
+  <p>Pedir para um usuário digitar um número e msotrar todos os números pares do 2 (inclusive) até o número que o usuário digitou.</p>
+  <p>Spoiler: Nós sabemos quantas vezes o loop será executado?</p>
+
+
+  <script>
+  let n = parseInt(prompt('Digite um número.'));
+  let i = 2;
+
+while(i <= n){
+  console.log(i);
+  i += 2;
+}
+
+console.log('-----------------')
+
+  do {
+    console.log(i);
+    i += 2;
+
+  } while(i <= n);
+
+  
+  </script>
+</body>
+</html>
