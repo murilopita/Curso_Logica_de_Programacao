@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Break - Continue</title>
+</head>
+<body>
+  <h1>Break Vs. Continue</h1>
+  <p>1 - Percorra um loop de 1 a 10 e interrompa a execu;áo do loop quando o valor for igual a 5</p>
+  <p>2 - Percorra um loop de 1 a 10 mas "pule" o número 5. Spoiler: cuidado com loops infinitos</p>
+  <p>3 - </p>
+
+
+  <script>
+
+
+    for(let contador = 1; contador <= 10; contador++){
+      document.write(contador + '<br>');
+      if(contador === 5){
+          break
+      }
+    }
+
+    document.write('Fim do Loop com Break' + '<br><br>');
+
+    for(let contador = 1; contador <= 10; contador++){
+      if(contador === 5){
+        continue
+      }
+      document.write(contador + '<br>')
+    }
+
+    document.write('Fim do Loop com Continue' + '<br>');
+    document.write('<br><hr><br>')
+
+    document.write('Break e Continue com Loop While' + '<br><br><br>')
+
+    let x = 1;
+    while (x < 10){
+      document.write(x + '<br>');
+      if (x === 5) {
+        break
+      }
+      x++
+    }
+    document.write('Fim do Loop While com Break' + '<br><br><br>');
+
+    x = 1;
+    while (x < 10) {
+      if(x === 5){
+        x++
+        continue
+      }
+      document.write(x + '<br>');
+      x++
+    }
+    document.write('Fim do loop While com Continue');
+
+  </script>
+</body>
+</html>

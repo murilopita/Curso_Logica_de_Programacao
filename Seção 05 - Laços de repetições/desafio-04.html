@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Break - Continue</title>
+</head>
+<body>
+  <h1>Desafio 04</h1>
+  <h2>Loop dos Dados - Break e Continue</h2>
+
+  <p>Jogue dois dados quantas vezes forem necessárias até que a soma dos pontos dos dados seja par por 10 vezes. Quantas vezes os dados foram jogados?</p>
+
+  <script>
+
+    let quantasVezesDadosJogados = 0;
+    let quantasVezesPar = 0;
+
+    while(true){
+      let dado1 = parseInt(Math.random() * 6 + 1);
+      let dado2 = parseInt(Math.random() * 6 + 1);
+
+      document.write(dado1, dado2, quantasVezesDadosJogados, quantasVezesPar + '<br>');
+      quantasVezesDadosJogados++
+
+      if ((dado1 + dado2) % 2 === 0) {
+        quantasVezesPar++
+      }
+
+      if(quantasVezesPar >= 10){
+        break
+      }
+    }
+
+    document.write('Os dados foram jogados: ' + quantasVezesDadosJogados + ' vezes!');
+
+
+
+  </script>
+</body>
+</html>
