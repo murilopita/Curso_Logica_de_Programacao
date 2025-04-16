@@ -17,7 +17,12 @@
 
   <script>
 
-    let nomes = ['Carla', 'Paulo', 'Murilo', 'Lucas', 'Pedro'];
+    let nomes = ['Carla', 'Paulo', 'Murilo', 'Lucas', 'Pedro', 'Fabio'];
+
+    let nomeDigitado = prompt('Digite um nome:')
+    nomes.push(nomeDigitado);
+
+    //nomes[nomes.length] = nomeDigitado;
 
 
     document.write('LISTA DE NOMES:' + '<br><br>');
@@ -25,7 +30,7 @@
     for (let i = 0; i < nomes.length; i++) {
       document.write(nomes[i] + '<br>');
     }
-    
+
 
     document.write('<br>' + 'Existem ' + nomes.length + ' elementos na lista!');
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio - 01</title>
+</head>
+
+<body>
+  <h1>Desafio Dias da Semana</h1>
+
+  <p>Dado um array contendo os dias da semana, mostre em um alert qual é o dia atual.</p>
+  <br>
+  <br>
+
+  <h2>Resposta:</h2>
+
+  <script>
+    const diasSemana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+
+    const hoje = new Date();
+    const diaSemanaHoje = hoje.getDay();
+
+    alert('Olá, hoje é ' + diasSemana[diaSemanaHoje]);
+
+
+  </script>
+</body>
+
+</html>

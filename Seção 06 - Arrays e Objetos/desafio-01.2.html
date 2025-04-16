@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio - 01.2</title>
+</head>
+
+<body>
+  <h1>Desafio Meses do Ano</h1>
+
+  <p>Dado um array contendo os meses do ano, mostre em um alert qual é o mês atual e depois peça para o usuário digitar um número de 1 a 12 e mostre o nome do mês correspondente. </p>
+  <br>
+  <br>
+
+  <h2>Resposta:</h2>
+
+  <script>
+    const mesesAno = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+
+    const hoje = new Date();
+    const mesAnoHoje = hoje.getMonth();
+    alert('Hoje estamos no mês de ' + mesesAno[mesAnoHoje]);
+
+    let numero = prompt('Digite um número de 1 a 12') - 1;
+
+    document.write('O mês correspondente ao número que você digitou é ' + mesesAno[numero] + '!');
+
+  </script>
+</body>
+
+</html>

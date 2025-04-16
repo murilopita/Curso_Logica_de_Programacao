@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duplicando Arrays</title>
+</head>
+
+<body>
+  <h1>Arrays - Exercício 05</h1>
+
+  <p>Dado um array de números, crie uma outra array contendo os números multiplicados por 2.</p>
+  <br>
+  <br>
+
+  <h2>Resposta:</h2>
+
+  <script>
+    let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let numeros2 = [];
+
+    for (let i = 0; i < numeros.length; i++) {
+      
+      let multiplo = numeros[i] * 2;//multiplica cada indice do array por 2 e armazena em uma variavel.
+      
+      numeros2.push(multiplo);//adiciona essa variável na nova array.
+    }
+
+    document.write('Primeira Lista: ' + numeros + '<br><br>');
+    document.write('Segunda Lista: ' + numeros2);
+  </script>
+</body>
+
+</html>
