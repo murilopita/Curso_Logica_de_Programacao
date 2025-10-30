@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio - 04</title>
+</head>
+
+<body>
+  <h1>Desafio: Meio do Array</h1>
+
+  <p>Dado um array que pode conter valores de tipos diferentes, mostre num alert qual é o valor que está no meio (pode ser aproximado).</p>
+  <br>
+  <br>
+
+  <h2>Resposta:</h2>
+
+  <script>
+
+    const numeros = [2, undefined, 31, 0, "9", 12, "qualquer texto", 98, false, [], null];
+    let meio = 0;
+
+    for(let i = 0; i < numeros.length; i++){
+      let qtdValores = numeros.length; //Saber a qtd de itens na lista
+
+      meio = parseInt(qtdValores / 2); //vai retornar um valor em número que posso usar depois para mostrar a localização no array.
+
+    }
+
+    alert('O valor que está no meio é: ' + numeros[meio]);
+    
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio - 03</title>
+</head>
+
+<body>
+  <h1>Desafio Soma dos Números da Array</h1>
+
+  <p>Dado um array que pode conter valores de tipos diferentes, mostre num alert a soma de todos os números.</p>
+  <br>
+  <br>
+
+  <h2>Resposta:</h2>
+
+  <script>
+
+    const numeros = [2, undefined, 31, 0, "9", 12, "qualquer texto", 98, false, [], null];
+    let soma = 0;
+
+    for (let i = 0; i < numeros.length; i++) {
+      let n = numeros[i];
+
+      if (typeof n === "number") {
+        //soma somente os números de fato.
+        soma = soma + n;
+      }
+    }
+
+    
+
+    alert('A Soma dos números da Array é: ' + soma);
+  </script>
+</body>
+
+</html>
