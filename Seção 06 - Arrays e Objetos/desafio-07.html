@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio - 07</title>
+</head>
+
+<body>
+  <h1>Desafio dos Array</h1>
+
+  <p>Dado um array de nomes, mostre na tela todos os nomes de trás para frente (o último item do array é o primeiro na página).</p>
+  <br>
+  <br>
+
+  <h2>Resposta:</h2>
+
+  <script>
+
+    const nomes = ["Murilo", "João", "Paula", "Lucas", "Fernanda"];
+
+    for (let i = nomes.length - 1; i >= 0; i--) {
+      //Isso faz com que ele percorra de trás para frente.
+      document.write(nomes[i] + '<br>');
+    }
+
+  </script>
+</body>
+
+</html>
