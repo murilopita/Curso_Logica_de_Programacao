@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetos em JavaScript</title>
+</head>
+
+<body>
+  <h1>Objetos Em JavaScript</h1>
+
+  <h2>Desafio 01</h2>
+
+  <h3>Dado o seguinte objeto:</h3>
+  <p> const carro = {modelo: "Uno", ano: 2023, km: 10000, combustivel: "gasolina", litrosConsumidos: 625};</p>
+  <p>Adicione a propriedade "marca" e mostre na tela a seguinte mensagem na tela: "O carro Fiat Uno ano 2023 fez em média xxx Km/L de gasolina."</p>
+
+  <br>
+
+  <h3>Resultado:</h3>
+
+  <script>
+
+    const carro = {
+      //marca: "Fiat",
+      modelo: "Uno",
+      ano: 2023,
+      km: 10000,
+      combustivel: "gasolina",
+      litrosConsumidos: 625
+    }
+    carro.marca = "Fiat";
+
+    let media = carro.km / carro.litrosConsumidos;
+
+    document.write(`O carro ${carro.marca} ${carro.modelo} ano ${carro.ano} fez em média ${media}Km/L de gasolina`);
+
+
+  </script>
+</body>
+
+</html>
