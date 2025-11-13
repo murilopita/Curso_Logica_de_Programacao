@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetos em JavaScript</title>
+</head>
+
+<body>
+  <h1>Objetos Em JavaScript</h1>
+
+  <h2>Exercício 03</h2>
+
+  <h3>Dado os seguintes objetos:</h3>
+  <p>const pessoa = {
+    nome: "João",
+    sobrenome: "Fagundes"
+    };</p>
+
+  <p>const endereco = {
+    logradouro: "Rua das Tulias",
+    numero: 302
+    };</p>
+
+  <p>Mostre no console todas as propriedades e seus respectivos valores do objeto pessoa.</p>
+
+  <br>
+
+  <h3>Resultado:</h3>
+
+  <script>
+
+    const endereco = {
+      logradouro: "Rua das Tulias",
+      numero: 302
+    };
+
+    const pessoa = {
+      nome: "João",
+      sobrenome: "Fagundes",
+      endereco //tanto o valor quanto a propriedade sao iguais, nao precisa digitar duas vezes.
+    };
+
+    document.write(`${pessoa.nome} ${pessoa.sobrenome} mora no endereço: ${pessoa.endereco.logradouro}, ${pessoa.endereco.numero}.`);
+
+    //Loop for ... in : Serve para interagir com um objeto, percorrendo as propriedades de um objeto.
+
+    for(let prop in pessoa){
+      console.log(prop);
+      console.log(pessoa[prop]);
+
+      //1 - "nome" - pessoa["nome"] - pessoa.nome
+      //1 - "sobrenome" - pessoa["sobrenome"] - pessoa.sobrenome
+      //1 - "endereco" - pessoa["endereco"] - pessoa.endereco
+
+    }
+
+  </script>
+</body>
+
+</html>
