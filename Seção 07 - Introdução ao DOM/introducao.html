@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+
+<body>
+  <h1 id="titulo">Um título qualquer</h1>
+  <p id="paragrafo">Este é apenas um parágrafo contendo um <i>texto em itálico </i>qualquer.</p>
+
+  <hr>
+
+  <input type="text" id="user" value="valor preenchido">
+
+  <hr>
+
+  <h2>Lista de Tarefas</h2>
+  <ol id="listaTarefas">
+    <li>Aprender CSS</li>
+    <li>Aprender Javascript</li>
+    <li>Aprender DOM</li>
+    <li>Criar Algo</li>
+  </ol>
+
+  <script>
+    document.getElementById("titulo").textContent = "titulo alterado 2";
+
+    //incluir itens na lista de tarefas pelo javascript
+
+    const lista = document.getElementById("listaTarefas");
+    let novaTarefa = "<li>Aplicar à vagas de emprego.</li>"
+
+    lista.innerHTML += novaTarefa;
+
+    //outra forma de adicionar itens em uma ista:
+    lista.innerHTML = lista.innerHTML + "<li>teste</li>";
+
+    // ^^ é a mesma coisa que:
+    lista.innerHTML += "<li>teste 2</li>";
+
+  </script>
+</body>
+
+</html>
