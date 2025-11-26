@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estruturas Complexas - Arrays e Objetos</title>
+
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      text-align: center;
+    }
+
+    th {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    td {
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    th,
+    td {
+      padding: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Arrays com Objetos</h1>
+
+  <h2>Exercício 01 - Tabela de Produtos</h2>
+
+  <p>Dado um array contendo 3 objetos, cada um representando um produto, mostrar em uma tabela (tag < table>) o nome, o preço e a quantidade em estoque de cada produto.</p>
+
+  <h3>Resultado:</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Preço</th>
+        <th>Qtd. Estoque</th>
+      </tr>
+    </thead>
+
+    <tbody id="tabelaProdutos">
+      <tr>
+        <td>--</td>
+        <td>--</td>
+        <td>--</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+
+    const produtos = [
+      { nome: "Caneta", preco: 2, qtd: 12 },
+      { nome: "Lápis", preco: 1, qtd: 10 },
+      { nome: "Borracha", preco: 0.50, qtd: 20 },
+      { nome: "Régua", preco: 4.5, qtd: 15 },
+      { nome: "Corretivo", preco: 4, qtd: 15 }
+    ];
+
+    const tabelaProdutos = document.getElementById("tabelaProdutos");
+
+    for (let i = 0; i < produtos.length; i++) {
+      tabelaProdutos.innerHTML +=
+        ` <tr>
+        <td>${produtos[i].nome}</td>
+        <td>R$ ${produtos[i].preco.toFixed(2)}</td>
+        <td>${produtos[i].qtd}</td>
+      </tr>`
+    }
+
+    //.toFixed(2) >> adiciona 2 casas decimais nos números.
+
+  </script>
+
+</body>
+
+</html>

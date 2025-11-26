@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estruturas Complexas - Arrays e Objetos</title>
+</head>
+<body>
+
+  <h1>Arrays com Objetos</h1>
+
+  <h2>Introdução</h2>
+
+  <p>Dado um array contendo 5 objetos (onde cada objeto possui duas propriedades "nome" e "email"), mostre em uma lista (tag < ul >) cada um desses nomes com seus respectivos emais. </p>
+
+  <h3>Resultado:</h3>
+  
+  <ul id="listaPessoas"></ul>
+
+  <script>
+
+    const pessoas = [
+      {nome: "Murilo", email: "murilo@server.com"},
+      {nome: "Ana", email: "ana@server.com"},
+      {nome: "Julio", email: "julio@server.com"},
+      {nome: "Daniel", email: "daniel@server.com"},
+      {nome: "Maria", email: "maria@server.com"}
+    ];
+
+    const listaPessoas = document.getElementById('listaPessoas');
+
+    for(let i = 0; i < pessoas.length; i++){
+      listaPessoas.innerHTML += `<li>${pessoas[i].nome}: ${pessoas[i].email}</li>`;
+    }
+
+
+  </script>
+
+</body>
+</html>
