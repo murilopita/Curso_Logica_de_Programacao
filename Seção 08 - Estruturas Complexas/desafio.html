@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estruturas Complexas - Arrays e Objetos</title>
+
+  <style>
+    h3 {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p,
+    li {
+      font-family: 'Courier New', Courier, monospace;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Arrays com Objetos com Arrays </h1>
+
+  <h2>Exercício 03 - Informações dos Alunos</h2>
+
+  <p>Dado um array de alunos semelhantes à:</p>
+  <p><strong>const alunos = [ { nome: "nome 1", notas: [1,3,3,8] }, { nome: "nome 2", notas: [10,6,3,2] } ];</strong></p>
+  <p>Mostre na tela uma lista contendo o nome e a média de cada aluno.</p>
+  <br>
+
+  <h2>Resultado:</h2>
+
+  <h3>Dados do Aluno</h3>
+
+  <ul id="listaAlunos">
+    <li>Nome 1, média 3.75</li>
+    <li>Nome 2, média 5.25</li>
+  </ul>
+
+
+  <script>
+    //Array:
+    const alunos = [
+      { nome: "Murilo Pita", notas: [1, 3, 3, 8] },
+      { nome: "Maria Julia", notas: [10, 7, 9, 8] },
+      { nome: "João Gomes", notas: [10, 6, 3, 2] }
+    ];
+
+    const listaAlunos = document.getElementById("listaAlunos");
+    let alunosHTML = "";
+
+    for (let i = 0; i < alunos.length; i++) {
+      alunosHTML += "<li>" + alunos[i].nome + ", média: ";
+      let somaNotas = 0;
+      for (let j = 0; j < alunos[i].notas.length; j++) {
+        somaNotas += alunos[i].notas[j];
+      }
+      let media = somaNotas / alunos[i].notas.length;
+      alunosHTML += media + "</li>"
+    }
+
+    //Linkar o DOM:
+    listaAlunos.innerHTML = alunosHTML;
+
+  </script>
+
+</body>
+
+</html>
